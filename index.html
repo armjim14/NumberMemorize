@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="ticreset.css">
+    <link rel="stylesheet" href="ticstyle.css">
+</head>
+<body onload="startGame();">
+
+    <h1>Tic Tac Toe </h1>
+
+    <div iD="message"></div>
+
+    <button id="reset">Reset Game</button>
+
+    <center>
+    <table>
+        <tr>
+            <td id="s1" class="square" onclick="nextMove(this)"></td>
+            <td id="s2" class="square" onclick="nextMove(this)"></td>
+            <td id="s3" class="square" onclick="nextMove(this)"></td>
+        </tr>
+        <tr>
+            <td id="s4" class="square" onclick="nextMove(this)"></td>
+            <td id="s5" class="square" onclick="nextMove(this)"></td>
+            <td id="s6" class="square" onclick="nextMove(this)"></td>
+        </tr>
+        <tr>
+            <td id="s7" class="square" onclick="nextMove(this)"></td>
+            <td id="s8" class="square" onclick="nextMove(this)"></td>
+            <td id="s9" class="square" onclick="nextMove(this)"></td>
+        </tr>
+    </table>
+    </center>
+
+<script src="ticlogic.js"></script>
+</body>
+</html>
