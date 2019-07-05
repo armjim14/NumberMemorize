@@ -1,3 +1,5 @@
+var count = 0;
+
 function startGame() {
     document.Turn = "X";
 
@@ -7,6 +9,7 @@ function setMessage(msg) {
     document.getElementById("message").innerText = msg;
 }
 function nextMove(square) {
+    count++;
     if (square.innerText == "") {
     square.innerText = document.Turn;
     switchTurns();
@@ -22,6 +25,8 @@ function switchTurns() {
                 rem[i].removeAttribute("onclick");
         }
         document.getElementById("reset").style.display = "inline";
+    } else if ( count == 9 ){
+        noWinner();
     } else {
         if (document.Turn == "X") {
             document.Turn = "O";
@@ -31,6 +36,12 @@ function switchTurns() {
         setMessage (document.Turn + " turn is next");
     }
 }
+
+function noWinner(){
+    setMessage("The cat won");
+    document.getElementById("reset").style.display = "inline";
+}
+
 function checkWinner(move) {
     var game = false;
     if (checkBox(1, 2, 3, move) ||
