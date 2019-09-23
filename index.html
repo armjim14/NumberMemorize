@@ -1,41 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="ticreset.css">
-    <link rel="stylesheet" href="ticstyle.css">
+    <title>Numbers</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="startGame();">
 
-    <h1>Tic Tac Toe </h1>
-
-    <div iD="message"></div>
-
-    <button id="reset">Reset Game</button>
-
-    <center>
-    <table>
-        <tr>
-            <td id="s1" class="square" onclick="nextMove(this)"></td>
-            <td id="s2" class="square" onclick="nextMove(this)"></td>
-            <td id="s3" class="square" onclick="nextMove(this)"></td>
-        </tr>
-        <tr>
-            <td id="s4" class="square" onclick="nextMove(this)"></td>
-            <td id="s5" class="square" onclick="nextMove(this)"></td>
-            <td id="s6" class="square" onclick="nextMove(this)"></td>
-        </tr>
-        <tr>
-            <td id="s7" class="square" onclick="nextMove(this)"></td>
-            <td id="s8" class="square" onclick="nextMove(this)"></td>
-            <td id="s9" class="square" onclick="nextMove(this)"></td>
-        </tr>
-    </table>
-    </center>
-
-<script src="ticlogic.js"></script>
+<body>
+    <header>
+        <h1>The Numbers Test</h1>
+    </header>
+    <article>
+        <p>Click on the numbers in an ascending order. Once you click on the first numbers all the text will disappear.</p>
+    </article>
+    <div id="forScore">
+        <p>Current Score: <span id="currentScore">0</span> -- Top Score: <span id="topScore">0</span></p>
+        <p>Times won: <span id="localWin"></span></p>
+    </div>
+    <section>
+        <table>
+            <tr id="1">
+                <td id="1-1">.</td>
+                <td id="1-2">.</td>
+                <td id="1-3">.</td>
+                <td id="1-4">.</td>
+            </tr>
+            <tr id="2">
+                <td id="2-1">.</td>
+                <td id="2-2">.</td>
+                <td id="2-3">.</td>
+                <td id="2-4">.</td>
+            </tr>
+            <tr id="3">
+                <td id="3-1">.</td>
+                <td id="3-2">.</td>
+                <td id="3-3">.</td>
+                <td id="3-4">.</td>
+            </tr>
+            <tr id="4">
+                <td id="4-1">.</td>
+                <td id="4-2">.</td>
+                <td id="4-3">.</td>
+                <td id="4-4">.</td>
+            </tr>
+            <tr id="5">
+                <td id="5-1">.</td>
+                <td id="5-2">.</td>
+                <td id="5-3">.</td>
+                <td id="5-4">.</td>
+            </tr>
+        </table>
+    </section>
+<script src="js/logic.js"></script>
 </body>
 </html>
